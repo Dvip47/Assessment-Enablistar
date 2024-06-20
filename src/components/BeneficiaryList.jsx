@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeBeneficiary } from '../store/beneficiarySlice';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const BeneficiaryList = () => {
   const beneficiaries = useSelector(state => state.beneficiaries.list);
@@ -9,6 +10,9 @@ const BeneficiaryList = () => {
 
   const handleDelete = (id) => {
     dispatch(removeBeneficiary(id));
+    toast.error('Beneficiary information remove successfully!', {
+        position: 'top-right'
+      });
   };
 
   return (

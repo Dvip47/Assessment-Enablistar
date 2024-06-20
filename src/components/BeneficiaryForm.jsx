@@ -52,7 +52,6 @@ const BeneficiaryForm = ({ onSubmit, defaultValues = {} }) => {
                             {errors.pincode && <p className="error-message">This field is required</p>}
                         </div>
                         <button type="submit" className="submit-button">Submit</button>
-
                     </>
                 ) : (
                     <>
@@ -68,7 +67,6 @@ const BeneficiaryForm = ({ onSubmit, defaultValues = {} }) => {
                     </>
                 )
             }
-
         </form>
     );
 };
