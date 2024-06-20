@@ -1,0 +1,151 @@
+/* Main heading for Manage Beneficiaries */
+.manage-beneficiaries-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: linear-gradient(to right, rgba(255, 0, 0, 0.2) 20%, rgba(0, 0, 255, 0.2) 80%); */
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Added margin to separate the heading from the table */
+}
+
+.manage-beneficiaries-heading .logo-icon {
+  font-size: 30px;
+  margin-right: 10px; /* Adjusted margin for better spacing */
+}
+
+.manage-beneficiaries-heading span {
+  font-size: 24px; /* Adjust font size for better visibility */
+}
+
+/* Add Beneficiary button */
+.add-beneficiary-button {
+  background-color: rgb(4, 160, 4);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size for better visibility */
+}
+
+.add-beneficiary-button:hover {
+  background-color: darkgreen;
+}
+
+/* Table styles */
+.beneficiary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.beneficiary-table th,
+.beneficiary-table td {
+  border: 1px solid #ddd;
+  padding: 12px 8px;
+  text-align: left;
+}
+
+.beneficiary-table th {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.beneficiary-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Edit and Delete buttons */
+.edit-button,
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.edit-button i,
+.delete-button i {
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.edit-button i:hover,
+.delete-button i:hover {
+  color: #0056b3; /* Darker color on hover for better user experience */
+}
+
+
+.beneficiary-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='text'],
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: darkgreen;
+}
+
+
+.add-edit-beneficiary-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.add-edit-beneficiary-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-data{
+  text-align: center;
+}
